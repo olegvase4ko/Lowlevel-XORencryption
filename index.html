@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+            display: inline-block;
+        }
+
+        th,
+        td {
+            padding: 10px 20px;
+            border: 1px solid #000;
+        }
+
+        .info {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="info">
+        <table>
+            <tr>
+                <td>Сообщение
+                    (Message)
+                </td>
+
+                <td id="mes"></td>
+            </tr>
+            <tr>
+                <td>Ключ
+                    (key)
+                </td>
+                <td id="key"></td>
+            </tr>
+            <tr>
+                <td>После XOR
+                    (after XOR)
+                </td>
+                <td id="xor"></td>
+            </tr>
+            <tr>
+                <td>зашифрованные числа
+                    (encrypted numbers)
+                </td>
+                <td id="ch"></td>
+            </tr>
+            <tr>
+                <td>Расшифровка
+                    (decoding)
+                </td>
+                <td id="rash"></td>
+            </tr>
+        </table>
+    </div>
+    <div class="form">
+        <form action="#" method="#" id="form">
+            <fieldset>
+                <legend>Зашифровать послание
+                    (Encrypt the message)
+                </legend>
+                <ul>
+                    <li>
+                        <label for="name">Слово
+                            (word)
+                        </label>
+                        <input type="text" name="word" placeholder="" id="name">
+                    </li>
+                    <li>
+                        <label for="age">Ключ
+                            (key)
+                        </label>
+                        <input type="text" name="key" placeholder="" id="age">
+                    </li>
+                </ul>
+                <div>
+                    <button type="submit">Make it!</button>
+
+                </div>
+        </form>
+
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
